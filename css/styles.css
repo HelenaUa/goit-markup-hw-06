@@ -121,7 +121,6 @@ ul {
   background-color: var(--accent-txt-cl);
   border-radius: 2px;
   border: transparent;
-  /* outline: 1px solid; */
 }
 
 .nav-link:hover,
@@ -326,6 +325,229 @@ ul {
 
   width: 18px;
   height: 18px;
+}
+
+/*Register form*/
+.register-form {
+}
+
+.register-form-title {
+  display: block;
+  text-align: center;
+
+  margin-left: 40px;
+  margin-top: 40px;
+  margin-right: 40px;
+  margin-bottom: 15px;
+
+  font-weight: 700;
+  font-size: 20px;
+  line-height: calc(23 / 20);
+  letter-spacing: 0.03em;
+
+  color: var(--main-txt-cl);
+}
+
+.register-form-group {
+  margin-bottom: 20px;
+}
+
+.register-form-field {
+  position: relative;
+  display: block;
+  margin-bottom: 28px;
+}
+
+.register-form-label {
+  position: absolute;
+  top: 50%;
+  left: 42px;
+  transform: translateY(-250%);
+
+  /* font-style: normal;
+font-weight: 400; */
+  font-size: 12px;
+  line-height: calc(14 / 12);
+  letter-spacing: 0.01em;
+
+  color: var(--light-txt-cl);
+}
+
+.register-form-input {
+  width: 448px;
+  height: 40px;
+  padding-left: 40px;
+  padding-right: 40px;
+  margin-left: 40px;
+  margin-right: 40px;
+
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  outline: transparent;
+
+  transition: border-color var(--animation);
+}
+
+.register-form-input:focus,
+.register-form-input:focus + .register-form-icon,
+.register-form-input:not(:placeholder-shown) {
+  border-color: rgba(33, 150, 243, 0.9);
+  fill: rgba(33, 150, 243, 0.9);
+}
+
+.register-form-input::placeholder {
+  opacity: 0;
+  transition: opacity var(--animation);
+}
+
+.register-form-input:focus::placeholder {
+  opacity: 1;
+}
+
+.register-form-icon {
+  position: absolute;
+  top: 50%;
+  left: 53px;
+  fill: var(--main-txt-cl);
+  transform: translateY(-50%);
+
+  transition: fill var(--animation);
+}
+
+.register-form-heading {
+  display: block;
+  margin-left: 41px;
+  text-align: justify;
+
+  font-size: 12px;
+  line-height: calc(14 / 12);
+  letter-spacing: 0.01em;
+
+  color: var(--light-txt-cl);
+}
+
+.register-form-message {
+  display: block;
+  width: 448px;
+  height: 120px;
+  padding: 18px;
+  margin-left: 40px;
+
+  /* font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.01em;
+
+  color: rgba(117, 117, 117, 0.5); */
+
+  resize: none;
+  outline: transparent;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+}
+
+.register-form-message::placeholder {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: calc(14 / 12);
+  letter-spacing: 0.01em;
+
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.01em;
+
+  color: rgba(117, 117, 117, 0.5);
+
+  border-color: rgba(117, 117, 117, 0.5);
+}
+
+.register-form-message:focus,
+.register-form-message:not(:placeholder-shown) {
+  border-color: rgba(33, 150, 243, 0.9);
+}
+
+.register-form-agreement {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+
+  margin-bottom: 30px;
+}
+
+.icon-checked {
+  opacity: 0;
+}
+
+.register-form-checkbox:checked + .register-form-icons .icon-checked {
+  opacity: 1;
+}
+
+.icon-unchecked {
+  transition: opacity var(--animation);
+}
+
+.register-form-checkbox:checked + .register-form-icons .icon-unchecked {
+  opacity: 0;
+}
+
+.register-form-checkbox:focus + .register-form-icons .icon-unchecked {
+  outline: 2px solid var(--accent-bg-cl);
+  outline-offset: 1px;
+  border-radius: 2px;
+}
+
+.register-form-desc {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: calc(24 / 14);
+
+  letter-spacing: 0.03em;
+  color: var(--light-txt-cl);
+}
+
+.register-form-link {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: calc(24 / 14);
+
+  letter-spacing: 0.03em;
+  text-decoration-line: underline;
+  color: var(--accent-txt-cl);
+}
+
+.register-form-btn {
+  display: block;
+  margin: 0 auto;
+  width: 200px;
+  height: 50px;
+  border: none;
+  /* margin-top: 30px; */
+
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: calc(30 / 16);
+  letter-spacing: 0.06em;
+
+  border-radius: 4px;
+
+  color: var(--white-txt-cl);
+  background-color: var(--accent-txt-cl);
+  cursor: pointer;
+
+  transition: background-color var(--animation);
+}
+
+.register-form-btn:hover,
+.register-form-btn:focus,
+.register-form-btn.active {
+  background-color: var(--btn-hover-cl);
 }
 
 /*Наші переваги*/
@@ -746,6 +968,29 @@ ul {
   width: 20px;
   height: 20px;
 }
+
+.subscribe-footer {
+}
+
+.subscribe-form {
+
+}
+
+.subscribe-form-label {
+font-weight: 700;
+font-size: 14px;
+line-height: calc(16 / 14);
+letter-spacing: 0.03em;
+text-transform: uppercase;
+
+color: var(--white-txt-cl);
+}
+
+.subscribe-form-input {
+  
+}
+
+
 
 /*Приховати заголовок в Наші переваги та Портфолио*/
 .visually-hidden {
