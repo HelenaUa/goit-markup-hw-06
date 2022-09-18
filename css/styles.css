@@ -325,6 +325,14 @@ ul {
 
   width: 18px;
   height: 18px;
+
+  fill: #000000;
+  transition: fill var(--animation);
+}
+
+.modal-icon:hover,
+.modal-icon:focus {
+  fill: var(--accent-txt-cl);
 }
 
 /*Register form*/
@@ -338,7 +346,7 @@ ul {
   margin-left: 40px;
   margin-top: 40px;
   margin-right: 40px;
-  margin-bottom: 15px;
+  margin-bottom: 27px;
 
   font-weight: 700;
   font-size: 20px;
@@ -433,14 +441,12 @@ font-weight: 400; */
   padding: 18px;
   margin-left: 40px;
 
-  /* font-family: 'Roboto';
-  font-style: normal;
   font-weight: 400;
   font-size: 12px;
-  line-height: 14px;
+  line-height: calc(14 / 12);
   letter-spacing: 0.01em;
 
-  color: rgba(117, 117, 117, 0.5); */
+  color: rgba(117, 117, 117, 0.5);
 
   resize: none;
   outline: transparent;
@@ -928,6 +934,7 @@ font-weight: 400; */
 }
 
 .social-footer {
+  margin-right: 93px;
 }
 
 .title-social {
@@ -972,25 +979,82 @@ font-weight: 400; */
 .subscribe-footer {
 }
 
-.subscribe-form {
+.subscribe-form-footer {
+  display: flex;
+  gap: 12px;
 
+  margin-top: 20px;
+}
+
+.subscribe-form {
+  /* position: relative;
+  display: block;
+  margin-bottom: 28px; */
 }
 
 .subscribe-form-label {
-font-weight: 700;
-font-size: 14px;
-line-height: calc(16 / 14);
-letter-spacing: 0.03em;
-text-transform: uppercase;
+  /* position: absolute; */
+  margin-bottom: 20px;
 
-color: var(--white-txt-cl);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: var(--white-txt-cl);
 }
 
 .subscribe-form-input {
-  
+  width: 358px;
+  height: 50px;
+  padding-left: 16px;
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: calc(20 / 16);
+  align-items: center;
+  letter-spacing: 0.03em;
+
+  color: rgba(255, 255, 255, 0.6);
+  background-color: var(--accent-bg-cl);
+
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
 }
 
+.subscribe-form-btn {
+display: flex;
+gap: 10px;
+width: 200px;
+height: 50px;
+justify-content: center;
+align-items: center;
+text-align: center;
+border: none;
 
+font-weight: 700;
+font-size: 16px;
+line-height: calc(30 / 16);
+letter-spacing: 0.06em;
+
+color: var(--white-txt-cl);
+background-color: var(--accent-txt-cl);
+
+/* box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15); */
+border-radius: 4px;
+cursor: pointer;
+}
+
+.subscribe-form-btn:hover,
+.subscribe-form-btn:focus {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+.subscribe-form-icon{
+  fill: var(--white-txt-cl);
+}
 
 /*Приховати заголовок в Наші переваги та Портфолио*/
 .visually-hidden {
